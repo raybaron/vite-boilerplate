@@ -1,0 +1,25 @@
+$mobile-bp: 600px; // mobile
+$tablet-bp: 768px; // tablet
+$desktop-bp: 1024px; // small desktop
+$desktop-md-bp: 1200px; // medium desktop
+$desktop-lg-bp: 1600px; // large desktop
+
+$container-width: 1140px;
+$container-padding-mobile: 20px;
+$container-padding-desktop: 30px;
+
+//*** Colors ***//
+$color-white: #ffffff;
+$color-link: #3a74b4;
+$color-red: #e7252d;
+$color-light-red: #ffcccc;
+$color-beige: rgb(210, 206, 205);
+$color-light-beige: rgba(210, 206, 205, 0.4);
+$color-gravel: #494949;
+$color-light-gravel: #3c3b3b;
+$color-light-gray: #737373;
+$color-blue: #0c4da2;
+
+//*** Font ***//
+$f-body: Arial, sans-serif;
+$f-heading: Arial, sans-serif;

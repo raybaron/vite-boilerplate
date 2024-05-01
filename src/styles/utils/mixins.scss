@@ -1,0 +1,92 @@
+@mixin mobile {
+  @media screen and (min-width: $mobile-bp) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-bp) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-bp) {
+    @content;
+  }
+}
+
+@mixin desktop-md {
+  @media screen and (min-width: $desktop-md-bp) {
+    @content;
+  }
+}
+
+@mixin desktop-lg {
+  @media screen and (min-width: $desktop-lg-bp) {
+    @content;
+  }
+}
+
+@mixin link($color) {
+  color: $color;
+  text-decoration: none;
+  
+  @content;
+
+  // &:visited,
+  // &:active,
+  // &:focus {
+  //   color: $color-link;
+  // }
+
+  &:hover {
+    color: $color-red;
+  }
+}
+
+@mixin headingTwo {
+  font-family: $f-heading;
+  font-size: 32px;
+  font-weight: normal;
+  line-height: 1.1;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@mixin headingThree {
+  font-family: $f-heading;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+@mixin headingFour {
+  font-family: $f-heading;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+@mixin headingFive {
+  color: $color-gravel;
+  font-family: $f-heading;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+@mixin listUnstyled {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
